@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+a img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.main-nav {
+  background-image: url(/portfolio-images/port-1.avif);
+  background-repeat: no-repeat;
+  height: 5.5rem;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-bottom: 3px solid #ffbc00;
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav li {
+  padding: 1rem 1.5rem;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+.main-nav .current {
+  border-color: #ffbc00;
+}
+.main-nav .logo-1 {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+}
+
+.contact-page {
+  padding: 2rem 4rem;
+}
+.contact-page .text-align {
+  font-size: bold;
+}
+.contact-page .form-page {
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  grid-gap: 1.2rem;
+}
+.contact-page .message-area {
+  grid-area: message;
+  height: 100px;
+}
+.contact-page .btn-cover {
+  text-align: center;
+}
+.contact-page .btn {
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 10px 10px;
+  width: 50%;
+  margin-top: 10px;
+}
+.contact-page .btn:hover {
+  background-color: #ffbc00;
+}
+
+.contact-b {
+  padding: 2rem 4rem;
+  background-color: #333;
+  color: #f4f4f4;
+}
+.contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+#contact-c {
+  background-color: #ffbc00;
+  color: #f4f4f4;
+}
+#contact-c h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.footer {
+  background-color: #333;
+  height: 5rem;
+  color: #f4f4f4;
+}
+.footer .main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+.footer .special .fab {
+  margin-right: 1rem;
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    height: 7rem;
+    align-items: center;
+    background-position: 20% 100%;
+  }
+  .contact-page .form-page {
+    grid-template-areas: "name" "email" "subject" "phone" "message";
+  }
+  .contact-page .btn {
+    width: 70%;
+  }
+  .contact-b {
+    padding: 1rem 0;
+  }
+  .contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+  .contact-b .info {
+    padding: 1rem 0;
+  }
+  #contact-c h2 {
+    font-size: 2rem;
+  }
+  .footer {
+    height: 8rem;
+  }
+  .footer .main-footer {
+    flex-direction: column;
+    height: 6rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

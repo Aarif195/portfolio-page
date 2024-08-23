@@ -1,0 +1,360 @@
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  // background: #fff;
+  // color: $red-color;
+}
+
+a {
+  text-decoration: none;
+  // color: $dark-color;
+
+
+}
+
+ul {
+  list-style: none;
+}
+
+// h2,
+// h3,
+// h4 {
+//   text-transform: uppercase;
+// }
+
+img {
+  width: 100%;
+}
+
+// logo
+.logo {
+  width: 5%;
+  height: 5%;
+  // border-radius: 100%;
+}
+
+// main nav
+.main-nav {
+  
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding: 1rem 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+
+
+  &:hover{
+    border-color: $medium-color;
+  }
+
+&.current {
+  border-color: $main-color;
+}
+
+}
+
+
+// Header
+// .header {
+//   &-home {
+//     background: $bg-image no-repeat center right/ cover;
+//     height: 100vh;
+//   }
+// }
+
+.header-home {
+background-image: url('/portfolio-images/back-1.avif');
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+color: $light-color;
+
+
+.btn-light {
+  margin-top: 35px;
+}
+
+img {
+  width: 75px;
+  height: 75px;
+}
+}
+
+
+
+
+// Header Content
+.header-content {
+  text-align: center;
+  padding-top: 20%;
+
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+
+.container {
+  max-width: $website-width;
+  padding: 0.15rem;
+  margin: auto;
+  overflow: hidden;
+}
+// Button
+ %btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+ }
+
+ .btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+
+ }
+
+.text-align {
+  text-align: center;
+
+}
+
+
+// Section A: content
+.section-a {
+padding: 4rem;
+
+}
+.content-1 {
+  padding: 1rem;
+  text-align: center;
+  // color: blue;
+
+  h1 {
+    // padding-top: 0.5rem;
+    margin-bottom: 15px;
+  }
+}
+
+.content-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem ;
+  grid-gap: 1rem;
+
+
+
+  .fas {
+    color: $main-color;
+  }
+}
+
+//Home Section-B
+.section-b {
+  padding: 2rem  0;
+
+li {
+  line-height: 2;
+}
+
+.stats-title{
+  font-size: 1.5rem;
+}
+
+.stats-number{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.page > *:nth-child(even)
+{
+  background-color: $dark-color;
+}
+
+.page > *:nth-child(odd)
+{
+  background-color: $light-color;
+}
+
+  .detail ul {
+display: inline;
+  }
+
+}
+
+
+// Home Section C
+.home {
+  padding: 3rem 8rem;
+
+
+
+  .home-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.7rem;
+  }
+
+
+  .home-content {
+    padding: 1rem;
+  }
+
+  .icon i {
+    background-color: $dark-color;
+    padding: 25px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.7s;
+    // top: 0;
+    // right: 0;
+    // font-size: 28px;
+    // width: 25px;
+    // height: 15px;
+  }
+
+  .icon i:hover {
+    background-color: $main-color;
+  }
+
+  .icon-1 {
+    position: absolute;
+// bottom: 1rem;
+// top: 10px;
+// bottom: 20px;
+    color: $red-color;
+  }
+
+}
+
+
+// Footer
+.footer {
+  background-color: $dark-color;
+  height: 5rem;
+  color: $light-color;
+
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+  .special .fab {
+    margin-right: 1rem;
+    border: 1px solid $light-color;
+    border-radius: 50%;
+    padding: 0.4rem;
+  }
+}
+
+
+
+// MOBILE DESIGN
+@media (max-width: 768px) {
+  
+  // Header Home
+ .header-home {
+  height: 70vh;
+
+  .header-content {
+    padding-top: 10%;
+  }
+ }
+
+
+  
+  .section-a {
+    padding: 2rem;
+  }
+
+.section-a .content-2 {
+grid-template-columns: 1fr;
+padding: 1rem;
+}
+
+
+// Home Section B
+.section-b {
+  padding: 1rem 0;
+}
+.section-b .page,
+.section-c .testimonials {
+  grid-template-columns: 1fr;
+}
+
+
+
+// Home Section C
+.home{
+padding: 1rem 0;
+
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+// Footer
+.footer {
+  height: 10rem;
+
+  .main-footer {
+    flex-direction: column;
+    gap: 20px;
+    height: 7rem;
+    padding: 1rem;
+  }
+}
+
+
+}
+
+

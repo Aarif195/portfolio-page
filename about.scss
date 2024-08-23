@@ -1,0 +1,364 @@
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+
+}
+
+a {
+  text-decoration: none;
+  // color: $dark-color;
+
+  img {
+    width: 100%;
+  }
+
+}
+
+ul {
+  list-style: none;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.main-nav {
+  background-image: url(/portfolio-images/port-1.avif);
+  background-repeat: no-repeat;
+  height: 5.5rem;
+  background-size: cover;
+  // background-position: 20% 30%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-bottom: 3px solid $main-color;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $light-color;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    // border-color: $main-color;
+  }
+
+  .current {
+    border-color: $main-color;
+  }
+
+  .logo-1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+}
+
+
+// Section-c
+#section {
+  padding: 1rem;
+
+  .about {
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'bio-image bio bio'
+      'aw1 aw2 aw3';
+  }
+
+  .bio {
+    border-left: 2px solid $main-color;
+    background-color: $medium-color;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+  }
+
+  i {
+    color: $main-color;
+  }
+}
+
+// Awards
+// .awards {
+//   padding: 3rem;
+
+//   .award {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+
+
+// Technical Skills
+#tech {
+  background-color: $dark-color;
+  color: $light-color;
+  padding: 1.7rem;
+
+  .tech-title {
+    text-align: center;
+  }
+
+
+  .ram {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .progress {
+    height: 20px;
+    background-color: $main-color;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+  }
+
+  .pro {
+    width: 100%;
+  }
+
+  .pro-1 {
+    width: 60%;
+  }
+
+  .progress-2 {
+    height: 20px;
+    background-color: $light-color;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+    position: relative;
+  }
+
+  .progress-3 {
+    width: 80%;
+    height: 20px;
+    background-color: $main-color;
+    border-radius: 5px;
+    // margin-bottom: 0.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}
+
+// About-logos
+.logo {
+  background-color: $light-color;
+  padding: 0 5rem;
+
+  .about-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+// About-D Testimonial
+#about-d {
+  padding: 2rem 4rem;
+
+  .section-title {
+    text-align: center;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    padding-top: 1.7rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    border: 1px solid $medium-color;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+}
+
+// Footer
+.footer {
+  background-color: $dark-color;
+  height: 5rem;
+  color: $light-color;
+  // margin-top: 20px;
+
+  .main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+  }
+
+  .special .fab {
+    margin-right: 1rem;
+    border: 1px solid $light-color;
+    border-radius: 50%;
+    padding: 0.4rem;
+  }
+}
+
+
+
+// SECTION A: GALLERY
+.my-work {
+  padding: 2rem 4rem;
+
+
+  p {
+    font-size: bold;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 3rem;
+    padding-top: 20px;
+  }
+
+  .item {
+    position: relative;
+    background-color: $main-color;
+    overflow: hidden;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      opacity: 0.9;
+      background: inherit;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+      transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    // Bring in main color overlay
+    &:hover::after {
+      transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+    }
+
+    // Scale image on hover
+    img:hover {
+      transform: scale(1.2);
+    }
+
+    // Bring in  text on hover
+
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p,
+  h2 {
+    text-align: center;
+  }
+}
+
+
+
+// MOBILE DESIGN
+@media (max-width:768px) {
+
+  .main-nav {
+    height: 10rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.section-c {
+  .about {
+    grid-template-areas: 
+    'bio-image'
+    'bio'
+    'aw1'
+    'aw2'
+    'aw3';
+  }
+}
+
+  // Section C
+.section-c {
+  
+
+
+}
+
+
+// Section D Testimonials
+#about-d {
+padding: 1rem 0;
+
+
+
+.testimonials {
+  grid-template-columns: 1fr;
+}
+}
+
+
+// Section A : GALLERY
+.my-work{
+  padding: 1rem 0;
+
+.items {
+  grid-template-columns: 1fr;
+}
+}
+
+
+// footer
+.footer {
+height: 7rem;
+
+  .main-footer {
+flex-direction: column;
+padding: 1rem;
+height: 5rem;
+  }
+}
+}
