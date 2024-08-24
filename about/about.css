@@ -25,7 +25,7 @@ ul {
 }
 
 .main-nav {
-  background-image: url(/portfolio-images/port-1.avif);
+  background-image: url("/portfolio-images/port-1.avif");
   background-repeat: no-repeat;
   height: 5.5rem;
   background-size: cover;
@@ -71,7 +71,14 @@ ul {
   border-left: 2px solid #ffbc00;
   background-color: #ccc;
 }
-#section i {
+#section .bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+#section .bottom-line i {
   color: #ffbc00;
 }
 
