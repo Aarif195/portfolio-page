@@ -57,7 +57,7 @@ a.current {
 }
 
 .header-home {
-  background-image: url("/portfolio-images/back-1.avif");
+  background-image: url("/portfolio-images/bac.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -78,6 +78,10 @@ a.current {
 .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+.header-content p {
+  margin-top: 25px;
+  font-size: 1rem;
 }
 
 .container {
@@ -226,10 +230,18 @@ a.current {
 
 @media (max-width: 768px) {
   .header-home {
+    background-image: url(/portfolio-images/back122.avif);
     height: 70vh;
   }
   .header-home .header-content {
     padding-top: 10%;
+  }
+  .header-home h1 {
+    font-size: 3rem;
+  }
+  .header-home p {
+    margin-top: 30px;
+    font-size: 1.5rem;
   }
   .header-home li {
     padding: 1rem 0.5rem;
