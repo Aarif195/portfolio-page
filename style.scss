@@ -35,15 +35,15 @@ img {
 }
 
 // logo
-.logo {
-  width: 5%;
-  height: 5%;
-  // border-radius: 100%;
+.logo-1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
 }
 
 // main nav
 .main-nav {
-  
+
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
@@ -66,13 +66,13 @@ a {
   transition: border-color 0.5s;
 
 
-  &:hover{
+  &:hover {
     border-color: $medium-color;
   }
 
-&.current {
-  border-color: $main-color;
-}
+  &.current {
+    border-color: $main-color;
+  }
 
 }
 
@@ -86,21 +86,21 @@ a {
 // }
 
 .header-home {
-background-image: url('/portfolio-images/back-1.avif');
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-color: $light-color;
+  background-image: url('/portfolio-images/back-1.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: $light-color;
 
 
-.btn-light {
-  margin-top: 35px;
-}
+  .btn-light {
+    margin-top: 35px;
+  }
 
-img {
-  width: 75px;
-  height: 75px;
-}
+  img {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 
@@ -116,6 +116,8 @@ img {
     font-size: 4rem;
     line-height: 1.2;
   }
+
+
 }
 
 
@@ -125,16 +127,17 @@ img {
   margin: auto;
   overflow: hidden;
 }
+
 // Button
- %btn-shared {
+%btn-shared {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
   cursor: pointer;
- }
+}
 
- .btn {
+.btn {
   &-main {
     @extend %btn-shared;
     color: #333;
@@ -153,7 +156,7 @@ img {
     background-color: $dark-color;
   }
 
- }
+}
 
 .text-align {
   text-align: center;
@@ -163,9 +166,21 @@ img {
 
 // Section A: content
 .section-a {
-padding: 4rem;
+  padding: 4rem;
 
+  
 }
+
+
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+margin: 0 auto 1rem auto;
+}
+
 .content-1 {
   padding: 1rem;
   text-align: center;
@@ -180,7 +195,7 @@ padding: 4rem;
 .content-2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 2rem ;
+  padding: 2rem;
   grid-gap: 1rem;
 
 
@@ -192,38 +207,36 @@ padding: 4rem;
 
 //Home Section-B
 .section-b {
-  padding: 2rem  0;
+  padding: 2rem 0;
 
-li {
-  line-height: 2;
-}
+  li {
+    line-height: 2;
+  }
 
-.stats-title{
-  font-size: 1.5rem;
-}
+  .stats-title {
+    font-size: 1.5rem;
+  }
 
-.stats-number{
-  font-size: 2rem;
-  font-weight: bold;
-}
+  .stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
-.page {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
+  .page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.page > *:nth-child(even)
-{
-  background-color: $dark-color;
-}
+  .page>*:nth-child(even) {
+    background-color: $dark-color;
+  }
 
-.page > *:nth-child(odd)
-{
-  background-color: $light-color;
-}
+  .page>*:nth-child(odd) {
+    background-color: $light-color;
+  }
 
   .detail ul {
-display: inline;
+    display: inline;
   }
 
 }
@@ -239,37 +252,62 @@ display: inline;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.7rem;
+
   }
 
 
   .home-content {
-    padding: 1rem;
+    padding: 2rem;
   }
+
+  .icon {
+    position: relative;
+top: 0;
+right: 0;
+
+
+    .icon-1 {
+      position: absolute;
+      // top: 10px;
+      // left: 3px;
+      // right: -5px;
+      border-radius: 50%;
+      background-color: green;
+      padding: 1rem;
+      color: $red-color;
+      transition: all 1s;
+
+    }
+  }
+  
+
+
 
   .icon i {
     background-color: $dark-color;
+    margin-bottom: 20px;
     padding: 25px;
     border-radius: 50%;
-    position: relative;
     transition: all 0.7s;
-    // top: 0;
-    // right: 0;
-    // font-size: 28px;
-    // width: 25px;
-    // height: 15px;
+
   }
 
   .icon i:hover {
     background-color: $main-color;
   }
 
-  .icon-1 {
-    position: absolute;
-// bottom: 1rem;
-// top: 10px;
-// bottom: 20px;
-    color: $red-color;
+  .icon-1:hover {
+    // background-color: $main-color;
   }
+
+  // .icon-1 {
+  //   position: absolute;
+
+  //   border-radius: 50%;
+  //   background-color: green;
+  //   padding: 1rem;
+  //   color: $red-color;
+  // }
 
 }
 
@@ -281,17 +319,22 @@ display: inline;
   color: $light-color;
 
 
-.main-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 5rem;
-}
+  .main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+  }
+
   .special .fab {
     margin-right: 1rem;
     border: 1px solid $light-color;
     border-radius: 50%;
     padding: 0.4rem;
+  }
+
+  .special .fab:hover {
+    background-color: $main-color;
   }
 }
 
@@ -299,62 +342,77 @@ display: inline;
 
 // MOBILE DESIGN
 @media (max-width: 768px) {
-  
+
   // Header Home
- .header-home {
-  height: 70vh;
+  .header-home {
+    height: 70vh;
 
-  .header-content {
-    padding-top: 10%;
+    .header-content {
+      padding-top: 10%;
+    }
+
+    li {
+      padding: 1rem 0.5rem;
+    }
   }
- }
 
 
-  
+
   .section-a {
     padding: 2rem;
+
+
   }
 
-.section-a .content-2 {
-grid-template-columns: 1fr;
-padding: 1rem;
-}
+  .section-a .content-2 {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
 
+  }
 
-// Home Section B
-.section-b {
-  padding: 1rem 0;
-}
-.section-b .page,
-.section-c .testimonials {
-  grid-template-columns: 1fr;
-}
+  .content-3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+  }
 
+  // Home Section B
+  .section-b {
+    padding: 1rem 0;
+  }
 
-
-// Home Section C
-.home{
-padding: 1rem 0;
-
-  .home-container {
+  .section-b .page,
+  .section-c .testimonials {
     grid-template-columns: 1fr;
   }
-}
 
 
-// Footer
-.footer {
-  height: 10rem;
 
-  .main-footer {
-    flex-direction: column;
-    gap: 20px;
-    height: 7rem;
-    padding: 1rem;
+  // Home Section C
+  .home {
+    padding: 1rem 0;
+
+    .home-container {
+      grid-template-columns: 1fr;
+    }
+
   }
-}
+
+
+  // Footer
+  .footer {
+    height: 7rem;
+
+    .main-footer {
+      flex-direction: column;
+      row-gap: 15px;
+      height: 5rem;
+      padding: 1rem;
+      font-size: 15px;
+    }
+
+
+
+  }
 
 
 }
-
-

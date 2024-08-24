@@ -36,12 +36,7 @@ ul {
 }
 .main-nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-}
-.main-nav li {
-  padding: 1rem 0.5rem;
+  gap: 0.5rem;
 }
 .main-nav a {
   text-decoration: none;
@@ -58,7 +53,6 @@ ul {
   width: 50px;
   height: 50px;
   margin-left: 50px;
-  border-radius: 100px;
 }
 
 .contact-page {
@@ -73,9 +67,6 @@ ul {
   grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.2rem;
 }
-.contact-page .form-page input {
-  padding: 10px;
-}
 .contact-page .message-area {
   grid-area: message;
   height: 100px;
@@ -89,7 +80,6 @@ ul {
   padding: 10px 10px;
   width: 50%;
   margin-top: 10px;
-  display: inline-block;
 }
 .contact-page .btn:hover {
   background-color: #ffbc00;
@@ -132,22 +122,16 @@ ul {
   border-radius: 50%;
   padding: 0.4rem;
 }
-.footer .special .fab:hover {
-  background-color: #ffbc00;
-}
 
 @media (max-width: 768px) {
   .main-nav {
     flex-direction: column;
-    height: 10rem;
+    height: 7rem;
     align-items: center;
     background-position: 20% 100%;
   }
   .main-nav .logo-1 {
-    margin-left: -15px;
-  }
-  .main-nav ul {
-    gap: 0.5rem;
+    margin-left: 0;
   }
   .contact-page .form-page {
     grid-template-areas: "name" "email" "subject" "phone" "message";
@@ -173,10 +157,11 @@ ul {
   .footer .main-footer {
     flex-direction: column;
     row-gap: 15px;
-    height: 5rem;
-    padding: 1rem;
+    height: 6rem;
+    padding: 1rem 0;
+    text-align: center;
     font-size: 12px;
   }
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=about.css.map */
