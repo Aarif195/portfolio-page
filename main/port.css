@@ -57,7 +57,7 @@ a.current {
 }
 
 .header-home {
-  background-image: url("/portfolio-images/back112.avif");
+  background-image: url("/portfolio-images/cody-scott-milewski-aCnkRlBD0i4-unsplash (1).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -230,7 +230,6 @@ a.current {
 
 @media (max-width: 768px) {
   .header-home {
-    background-image: url(/portfolio-images/back122.avif);
     height: 70vh;
   }
   .header-home .header-content {
