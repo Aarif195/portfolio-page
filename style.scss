@@ -86,7 +86,7 @@ li {
 // }
 
 .header-home {
-  background-image: url('/portfolio-images/background.jpg');
+  background-image: url('a ./portfolio-images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -255,7 +255,7 @@ p{
   }
 
   .page>*:nth-child(even) {
-    background-color: $dark-color;
+    background-color: $medium-color;
   }
 
   .page>*:nth-child(odd) {
@@ -273,7 +273,9 @@ p{
 .home {
   padding: 3rem 8rem;
 
-
+p {
+  padding-bottom: 15px;
+}
 
   .home-container {
     display: grid;
@@ -311,7 +313,7 @@ p{
 
 
   .icon i {
-    background-color: $dark-color;
+    background-color: $medium-color;
     margin-bottom: 20px;
     padding: 25px;
     border-radius: 50%;

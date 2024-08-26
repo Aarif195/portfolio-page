@@ -42,7 +42,7 @@ li {
 }
 
 .header-home {
-  background-image: url("/portfolio-images/background.jpg");
+  background-image: url("a ./portfolio-images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -166,7 +166,7 @@ li {
   grid-template-columns: repeat(4, 1fr);
 }
 .section-b .page > *:nth-child(even) {
-  background-color: #333;
+  background-color: #ccc;
 }
 .section-b .page > *:nth-child(odd) {
   background-color: #f4f4f4;
@@ -177,6 +177,9 @@ li {
 
 .home {
   padding: 3rem 8rem;
+}
+.home p {
+  padding-bottom: 15px;
 }
 .home .home-container {
   display: grid;
@@ -200,7 +203,7 @@ li {
   transition: all 1s;
 }
 .home .icon i {
-  background-color: #333;
+  background-color: #ccc;
   margin-bottom: 20px;
   padding: 25px;
   border-radius: 50%;
