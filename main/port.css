@@ -42,7 +42,7 @@ li {
 }
 
 .header-home {
-  background-image: url("a ./portfolio-images/background.jpg");
+  background-image: url("./portfolio-images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
