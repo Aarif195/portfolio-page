@@ -25,7 +25,7 @@ ul {
 }
 
 .main-nav {
-  background-image: url("/portfolio-images/navbarimg.jpg");
+  background-image: url("../portfolio-images/navbarimg.jpg");
   background-repeat: no-repeat;
   height: 5.5rem;
   background-size: cover;
@@ -106,6 +106,9 @@ ul {
 #tech .pro-1 {
   width: 60%;
 }
+#tech h4 {
+  margin-bottom: 0.4rem;
+}
 #tech .progress-2 {
   height: 20px;
   background-color: #f4f4f4;
@@ -121,19 +124,6 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.logo {
-  background-color: #f4f4f4;
-  padding-bottom: 2.5rem;
-}
-.logo .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-}
-.logo img {
-  width: 50%;
 }
 
 #about-d {
@@ -162,6 +152,7 @@ ul {
 #about-d img {
   width: 50px;
   height: 50px;
+  object-fit: cover;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
@@ -199,8 +190,15 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   padding-top: 20px;
 }
+.my-work .item {
+  position: relative;
+  background-color: #ffbc00;
+  overflow: hidden;
+}
 .my-work img {
   width: 100%;
+  height: 50%;
+  object-fit: cover;
 }
 .my-work p,
 .my-work h2 {
@@ -226,13 +224,14 @@ ul {
     width: 100%;
   }
   #about-d {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+  }
+  #about-d h4 {
+    padding: 0.3rem 0;
   }
   #about-d .testimonials {
     grid-template-columns: 1fr;
-  }
-  .logo {
-    display: none;
+    padding: 0 0.5rem;
   }
   .my-work {
     padding: 1rem 0;

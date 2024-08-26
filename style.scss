@@ -86,7 +86,7 @@ li {
 // }
 
 .header-home {
-  background-image: url('./portfolio-images/background.jpg');
+  background-image: url('../portfolio-images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -143,6 +143,14 @@ p{
 
 .btn-light {
   color: black;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  background-color: $main-color;
+
 }
 
 }
@@ -436,6 +444,10 @@ p {
     .home-container {
       grid-template-columns: 1fr;
     }
+
+p {
+  padding: 0 0.7rem;
+}
 
   }
 

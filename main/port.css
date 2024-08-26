@@ -42,7 +42,7 @@ li {
 }
 
 .header-home {
-  background-image: url("./portfolio-images/background.jpg");
+  background-image: url("../portfolio-images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -84,6 +84,12 @@ li {
 }
 .header-content .btn-light {
   color: black;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.header-content .btn-light:hover {
+  background-color: #ffbc00;
 }
 
 .container {
@@ -274,6 +280,9 @@ li {
   }
   .home .home-container {
     grid-template-columns: 1fr;
+  }
+  .home p {
+    padding: 0 0.7rem;
   }
   .footer {
     height: 7rem;

@@ -31,7 +31,7 @@ ul {
 }
 
 .main-nav {
-  background-image: url('/portfolio-images/navbarimg.jpg');
+  background-image: url('../portfolio-images/navbarimg.jpg');
   background-repeat: no-repeat;
   height: 5.5rem;
   background-size: cover;
@@ -75,7 +75,7 @@ ul {
 
 // Section-c: About Me
 #section {
-  padding: 1rem ;
+  padding: 1rem;
 
   .about {
     padding: 1rem;
@@ -98,12 +98,12 @@ ul {
     width: 3rem;
     background: $main-color;
     display: block;
-  margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem auto;
 
-  i {
-    color: $main-color;
+    i {
+      color: $main-color;
+    }
   }
-}
 }
 
 // Technical Skills
@@ -137,9 +137,15 @@ ul {
     width: 60%;
   }
 
+  h4 {
+    margin-bottom: 0.4rem;
+  }
+
   .progress-2 {
     height: 20px;
-    background-color: $light-color;
+    // margin-top: 0.5rem;
+    background-color:
+      $light-color;
     border-radius: 5px;
     margin-bottom: 0.3rem;
     position: relative;
@@ -158,27 +164,11 @@ ul {
   }
 }
 
-// About-logos
-.logo {
-  background-color: $light-color;
-  // padding: 1.5rem 5rem;
-  padding-bottom: 2.5rem;
 
-  .about-logos {
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-  //  place-content: center;
-   place-items: center;
-  }
-
-  img {
-    width: 50%;
-  }
-}
 
 // About-D Testimonial
 #about-d {
-  padding: 3rem ;
+  padding: 3rem;
 
   .section-title {
     text-align: center;
@@ -207,6 +197,7 @@ ul {
   img {
     width: 50px;
     height: 50px;
+    object-fit: cover;
     border-radius: 50%;
     margin-right: 0.5rem;
   }
@@ -260,9 +251,12 @@ ul {
   }
 
   .item {
-    // position: relative;
-    // background-color: $main-color;
-    // overflow: hidden;
+    position: relative;
+    background-color: $main-color;
+    overflow: hidden;
+  
+    
+
 
 
     // &::after {
@@ -279,8 +273,7 @@ ul {
     //   transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
     // }
 
-    // Bring in main color overlay
-    // &:hover::after {
+    // Bring in main color overlay &:hover::after {
     //   transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
     // }
 
@@ -295,6 +288,8 @@ ul {
 
   img {
     width: 100%;
+    height: 50%;
+    object-fit: cover;
   }
 
   p,
@@ -314,7 +309,7 @@ ul {
     align-items: center;
 
 
-    .logo-1{
+    .logo-1 {
       margin-left: -15px;
     }
 
@@ -327,69 +322,67 @@ ul {
 
   // ABOUT PAGE
   #section {
-  .about {
-    grid-template-areas: 
-    'bio-image'
-    'bio'
-    'aw1'
-    'aw2'
-    'aw3';
-  }
-.bio {
-  // display: block;
-}
-  
-img {
-  width: 100%;
-}
+    .about {
+      grid-template-areas:
+        'bio-image'
+        'bio'
+        'aw1'
+        'aw2'
+        'aw3';
+    }
 
-}
+    .bio {
+      // display: block;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  }
 
   // Section C
-.section-c {
-  
+  .section-c {}
 
 
-}
+  // Section D Testimonials
+  #about-d {
+    padding: 1.5rem 0;
+
+    h4 {
+      padding: 0.3rem 0;
+    }
+
+    .testimonials {
+      grid-template-columns: 1fr;
+      padding: 0 0.5rem;
+    }
 
 
-// Section D Testimonials
-#about-d {
-padding: 1rem 0;
-
-
-
-.testimonials {
-  grid-template-columns: 1fr;
-}
-}
-
-
-// Section C LOGOS
-.logo {
-  display: none;
-}
-
-// Section A : GALLERY
-.my-work{
-  padding: 1rem 0;
-
-.items {
-  grid-template-columns: 1fr;
-}
-}
-
-
-// footer
-.footer {
-height: 7rem;
-
-  .main-footer {
-flex-direction: column;
-padding: 1rem;
-height: 5rem;
-font-size: 12px;
-row-gap: 15px;
   }
-}
+
+
+
+  // Section A : GALLERY
+  .my-work {
+    padding: 1rem 0;
+
+    .items {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  // footer
+  .footer {
+    height: 7rem;
+
+    .main-footer {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+      font-size: 12px;
+      row-gap: 15px;
+    }
+  }
 }

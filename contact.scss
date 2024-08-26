@@ -35,7 +35,7 @@ ul {
 }
 
 .main-nav {
-  background-image: url('/portfolio-images/navbarimg.jpg');
+  background-image: url('../portfolio-images/navbarimg.jpg');
   background-repeat: no-repeat;
   height: 5.5rem;
   background-size: cover;
@@ -106,6 +106,8 @@ ul {
 
   .btn-cover {
     text-align: center;
+    // border: none;
+    // border-radius: 5px;
   }
 
   .btn {
@@ -115,11 +117,18 @@ ul {
     width: 50%;
     margin-top: 10px;
     display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
   }
 
   .btn:hover {
     background-color: $main-color;
   }
+
+
+
 }
 
 // Section B : Contact Info
