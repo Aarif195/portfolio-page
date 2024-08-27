@@ -96,7 +96,8 @@ ul {
 
   }
 
-  .form-page input{
+  .form-page input,
+  textarea {
     padding: 10px;
   }
   .message-area {
@@ -106,8 +107,7 @@ ul {
 
   .btn-cover {
     text-align: center;
-    // border: none;
-    // border-radius: 5px;
+  
   }
 
   .btn {

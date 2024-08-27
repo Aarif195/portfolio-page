@@ -17,7 +17,7 @@ a {
   // color: $dark-color;
 
   img {
-    width: 100%;
+    // width: 100%;
   }
 
 }
@@ -78,6 +78,7 @@ ul {
   padding: 1rem;
 
   .about {
+    // height: 50%;
     padding: 1rem;
     display: grid;
     grid-gap: 1rem;
@@ -85,9 +86,20 @@ ul {
       'aw1 aw2 aw3';
   }
 
+img {
+  // height: 70%;
+  // width: 100%;
+  // object-fit: cover;
+}
+
+p {
+  line-height: 1.7rem;
+}
+
   .bio {
-    border-left: 2px solid $main-color;
+    border-left: 3px solid $main-color;
     background-color: $medium-color;
+    // min-height: 70%;
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -246,41 +258,43 @@ ul {
   .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 3rem;
     padding-top: 20px;
+
   }
 
   .item {
     position: relative;
     background-color: $main-color;
     overflow: hidden;
-  
-    
+    width: 100%;
+    height: 100%;
 
 
 
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   display: block;
-    //   opacity: 0.9;
-    //   background: inherit;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
-    //   transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
-    // }
 
-    // Bring in main color overlay &:hover::after {
-    //   transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
-    // }
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      opacity: 0.9;
+      background: inherit;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+      transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    // Bring in main color overlay 
+    &:hover::after {
+      transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+    }
 
     // Scale image on hover
-    // img:hover {
-    //   transform: scale(1.2);
-    // }
+    img:hover {
+      transform: scale(1.2);
+    }
 
     // Bring in  text on hover
 
@@ -288,7 +302,7 @@ ul {
 
   img {
     width: 100%;
-    height: 50%;
+    height: 75%;
     object-fit: cover;
   }
 
