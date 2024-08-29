@@ -259,6 +259,9 @@ ul {
   .my-work .items {
     grid-template-columns: 1fr;
   }
+  .my-work .items {
+    padding: 0 0.5rem;
+  }
   .footer {
     height: 7rem;
   }
